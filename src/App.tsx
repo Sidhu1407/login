@@ -93,7 +93,7 @@ const AnimatedAuth = () => {
       // Redirect after success
       setTimeout(() => {
         // Using React Router navigation instead of window.location
-        navigate('/dashboard');
+        window.location.href ='https://blueprint-alpha.vercel.app/';
       }, 1500);
     }, 2000);
   };
@@ -110,7 +110,7 @@ const AnimatedAuth = () => {
       // Redirect after success
       setTimeout(() => {
         // Using React Router navigation instead of window.location
-        navigate('/dashboard');
+        window.location.href ='https://blueprint-alpha.vercel.app/';
       }, 1500);
     }, 2000);
   };
@@ -451,7 +451,7 @@ function App() {
         <Route path="/signup" element={<Signup />} />
         <Route path="/forgot-password" element={<ForgotPassword />} />
         {/* Add a placeholder dashboard route for the success redirect */}
-        <Route path="/dashboard" element={<div className="min-h-screen flex items-center justify-center"><h1 className="text-3xl font-bold text-green-700">Welcome to AgroGen Dashboard!</h1></div>} />
+        <Route path="https://blueprint-alpha.vercel.app/" ></Route>
       </Routes>
     </div>
   );
